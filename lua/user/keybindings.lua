@@ -22,6 +22,9 @@ M.config = function()
   lvim.builtin.which_key.mappings["sm"] = { "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>", "Media Files" }
   lvim.builtin.which_key.mappings["sn"] = { "<cmd>TodoTelescope<cr>", "Todo" }
 
+  lvim.builtin.which_key.mappings["lD"] = { "<cmd>DogeGenerate<cr>", "Documentations Generate" }
+  lvim.builtin.which_key.mappings["bd"] = { "<cmd>BufferDelete<cr>", "Buffer Delete" }
+
   -- lvim.builtin.which_key.mappings["gd"] = { "<cmd>DiffviewOpen HEAD~1<cr>", "Diff" }
   -- lvim.builtin.which_key.mappings["dU"] = { "<cmd>lua require('dapui').toggle()<cr>", "Toggle UI" }
   -- lvim.builtin.which_key.mappings["de"] = { "<cmd>lua require('dapui').eval()<cr>", "Eval" }
