@@ -1,10 +1,10 @@
-lvim.lang.typescriptreact.formatters = {
+lvim.lang.javascriptreact.formatters = {
   {
     exe = "prettier",
     -- args = {},
   },
 }
-lvim.lang.typescriptreact.linters = {
+lvim.lang.javascriptreact.linters = {
   {
     exe = "eslint_d",
     -- args = {},

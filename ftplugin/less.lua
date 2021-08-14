@@ -1,6 +1,7 @@
-lvim.lang.yaml.formatters = {
+lvim.lang.less.formatters = {
   {
     exe = "prettier",
     -- args = {},
   },
 }
+

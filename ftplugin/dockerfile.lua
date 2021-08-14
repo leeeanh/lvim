@@ -1,18 +1,6 @@
-lvim.lang.dockerfile = {
-  formatters = {
-    exe = "",
-    args = {},
-  },
-  linters = {
-    {
-      exe = "hadolint",
-      args = {},
-    },
-  },
-}
-lvim.lang.docker.linters = {
+lvim.lang.dockerfile.linters = {
   {
     exe = "hadolint",
-    args = {},
+    -- args = {},
   },
 }
