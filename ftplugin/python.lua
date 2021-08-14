@@ -1,17 +1,17 @@
 lvim.lang.python.formatters = {
   {
     exe = "black",
-    args = {},
+    -- args = {},
   },
   {
     exe = "isort",
-    args = {},
+    -- args = {},
   },
 }
 
 lvim.lang.python.linters = {
   {
     exe = "flake8",
-    args = {},
+    -- args = {},
   },
 }
