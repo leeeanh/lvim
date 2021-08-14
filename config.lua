@@ -1,29 +1,3 @@
--- Neovim
--- =========================================
-local disabled_built_ins = {
-  "netrw",
-  "netrwPlugin",
-  "netrwSettings",
-  "netrwFileHandlers",
-  "gzip",
-  "zip",
-  "zipPlugin",
-  "tar",
-  "tarPlugin", -- 'man',
-  "getscript",
-  "getscriptPlugin",
-  "vimball",
-  "vimballPlugin",
-  "2html_plugin",
-  "logipat",
-  "rrhelper",
-  "spellfile_plugin",
-  -- 'matchit', 'matchparen', 'shada_plugin',
-}
-for _, _plugin in pairs(disabled_built_ins) do
-  vim.g["loaded_" .. _plugin] = 1
-end
-
 -- General
 -- =========================================
 lvim.format_on_save = false
@@ -59,20 +33,20 @@ vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
 vim.g.tokyonight_dark_sidebar = false
 vim.g.tokyonight_transparent = false
 lvim.builtin.galaxyline.colors = {
-                          alt_bg = "#1f2335",
-                          grey = "#a9b1d6",
-                          blue = "#394b70",
-                          cyan = "#88c0d0",
-                          red = "#BF616A",
-                          green = "#A3BE8C",
-                          yellow = "#E7cb93",
-                          orange = "#c68a75",
-                          purple = "#B48EAD",
-                          magenta = "#D16D9E",
-                          error_red = "#F44747",
-                          warning_orange = "#ff8800",
-                          info_yellow = "#FFCC66",
-                          hint_blue = "#4FC1FF",
+  alt_bg = "#1f2335",
+  grey = "#a9b1d6",
+  blue = "#394b70",
+  cyan = "#88c0d0",
+  red = "#BF616A",
+  green = "#A3BE8C",
+  yellow = "#E7cb93",
+  orange = "#c68a75",
+  purple = "#B48EAD",
+  magenta = "#D16D9E",
+  error_red = "#F44747",
+  warning_orange = "#ff8800",
+  info_yellow = "#FFCC66",
+  hint_blue = "#4FC1FF",
 }
 
 -- Builtin
@@ -106,7 +80,6 @@ end
 lvim.lsp.diagnostics.virtual_text = true
 lvim.lsp.override = { "rust", "java" }
 require("user.json_schemas").setup()
-
 
 -- Additional Leader bindings for WhichKey
 -- =========================================

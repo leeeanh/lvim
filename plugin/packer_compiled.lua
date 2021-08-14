@@ -74,12 +74,8 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leeanh/.local/share/lunarvim/site/pack/packer/start/AutoSave.nvim"
   },
-  ["astronauta.nvim"] = {
-    loaded = true,
-    path = "/home/leeanh/.local/share/lunarvim/site/pack/packer/start/astronauta.nvim"
-  },
   ["barbar.nvim"] = {
-    config = { "\27LJ\1\2‚\1\0\0\2\0\6\0\0154\0\0\0%\1\1\0>\0\2\0014\0\2\0007\0\3\0007\0\4\0007\0\5\0\15\0\0\0T\1\5€4\0\2\0007\0\3\0007\0\4\0007\0\5\0>\0\1\1G\0\1\0\19on_config_done\15bufferline\fbuiltin\tlvim\20core.bufferline\frequire\0" },
+    config = { "\27LJ\1\2\1\0\0\2\0\a\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\0014\0\3\0007\0\4\0007\0\5\0007\0\6\0\15\0\0\0T\1\5€4\0\3\0007\0\4\0007\0\5\0007\0\6\0>\0\1\1G\0\1\0\19on_config_done\15bufferline\fbuiltin\tlvim\nsetup\20core.bufferline\frequire\0" },
     loaded = false,
     needs_bufread = false,
     path = "/home/leeanh/.local/share/lunarvim/site/pack/packer/opt/barbar.nvim"
@@ -159,7 +155,7 @@ _G.packer_plugins = {
     path = "/home/leeanh/.local/share/lunarvim/site/pack/packer/opt/nvim-autopairs"
   },
   ["nvim-comment"] = {
-    config = { "\27LJ\1\2¤\1\0\0\4\0\b\0\0224\0\0\0004\1\1\0%\2\2\0>\0\3\3\14\0\0\0T\2\1€G\0\1\0007\2\3\1>\2\1\0014\2\4\0007\2\5\0027\2\6\0027\2\a\2\15\0\2\0T\3\6€4\2\4\0007\2\5\0027\2\6\0027\2\a\2\16\3\1\0>\2\2\1G\0\1\0\19on_config_done\fcomment\fbuiltin\tlvim\nsetup\17nvim_comment\frequire\npcall\0" },
+    config = { "\27LJ\1\2ÿ\1\0\0\5\0\f\0\0314\0\0\0004\1\1\0%\2\2\0>\0\3\3\14\0\0\0T\2\n€4\2\1\0%\3\3\0>\2\2\2\16\4\2\0007\3\4\2>\3\2\0027\3\5\3%\4\6\0>\3\2\1G\0\1\0007\2\a\1>\2\1\0014\2\b\0007\2\t\0027\2\n\0027\2\v\2\15\0\2\0T\3\6€4\2\b\0007\2\t\0027\2\n\0027\2\v\2\16\3\1\0>\2\2\1G\0\1\0\19on_config_done\fcomment\fbuiltin\tlvim\nsetup Failed to load nvim-comment\nerror\16get_default\rcore.log\17nvim_comment\frequire\npcall\0" },
     loaded = false,
     needs_bufread = false,
     path = "/home/leeanh/.local/share/lunarvim/site/pack/packer/opt/nvim-comment"
@@ -254,7 +250,7 @@ _G.packer_plugins = {
     path = "/home/leeanh/.local/share/lunarvim/site/pack/packer/opt/vim-doge"
   },
   ["vim-rooter"] = {
-    config = { "\27LJ\1\2„\1\0\0\2\0\a\0\0164\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\3\0007\0\4\0007\0\5\0007\0\6\0\15\0\0\0T\1\5€4\0\3\0007\0\4\0007\0\5\0007\0\6\0>\0\1\1G\0\1\0\19on_config_done\vrooter\fbuiltin\tlvim\24rooter_silent_chdir\6g\bvim\0" },
+    config = { "\27LJ\1\2ˆ\1\0\0\2\0\a\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\0014\0\3\0007\0\4\0007\0\5\0007\0\6\0\15\0\0\0T\1\5€4\0\3\0007\0\4\0007\0\5\0007\0\6\0>\0\1\1G\0\1\0\19on_config_done\vrooter\fbuiltin\tlvim\nsetup\16core.rooter\frequire\0" },
     loaded = true,
     path = "/home/leeanh/.local/share/lunarvim/site/pack/packer/start/vim-rooter"
   },
@@ -297,7 +293,7 @@ try_loadstring("\27LJ\1\2©\1\0\0\3\0\b\0\0204\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\
 time([[Config for nvim-tree.lua]], false)
 -- Config for: vim-rooter
 time([[Config for vim-rooter]], true)
-try_loadstring("\27LJ\1\2„\1\0\0\2\0\a\0\0164\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\3\0007\0\4\0007\0\5\0007\0\6\0\15\0\0\0T\1\5€4\0\3\0007\0\4\0007\0\5\0007\0\6\0>\0\1\1G\0\1\0\19on_config_done\vrooter\fbuiltin\tlvim\24rooter_silent_chdir\6g\bvim\0", "config", "vim-rooter")
+try_loadstring("\27LJ\1\2ˆ\1\0\0\2\0\a\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\0014\0\3\0007\0\4\0007\0\5\0007\0\6\0\15\0\0\0T\1\5€4\0\3\0007\0\4\0007\0\5\0007\0\6\0>\0\1\1G\0\1\0\19on_config_done\vrooter\fbuiltin\tlvim\nsetup\16core.rooter\frequire\0", "config", "vim-rooter")
 time([[Config for vim-rooter]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
@@ -320,9 +316,9 @@ time([[Defining lazy-load filetype autocommands]], false)
 time([[Defining lazy-load event autocommands]], true)
 vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-lspinstall'}, { event = "VimEnter *" }, _G.packer_plugins)]]
 vim.cmd [[au BufRead * ++once lua require("packer.load")({'numb.nvim', 'gitsigns.nvim', 'hop.nvim', 'nvim-comment', 'vim-doge', 'todo-comments.nvim'}, { event = "BufRead *" }, _G.packer_plugins)]]
-vim.cmd [[au BufWinEnter * ++once lua require("packer.load")({'galaxyline.nvim', 'dashboard-nvim', 'which-key.nvim', 'barbar.nvim', 'telescope-media-files.nvim', 'nvim-toggleterm.lua'}, { event = "BufWinEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au InsertCharPre * ++once lua require("packer.load")({'vim-vsnip', 'friendly-snippets'}, { event = "InsertCharPre *" }, _G.packer_plugins)]]
-vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'lsp_signature.nvim', 'nvim-compe'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufWinEnter * ++once lua require("packer.load")({'galaxyline.nvim', 'which-key.nvim', 'telescope-media-files.nvim', 'nvim-toggleterm.lua', 'barbar.nvim', 'dashboard-nvim'}, { event = "BufWinEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au InsertCharPre * ++once lua require("packer.load")({'friendly-snippets'}, { event = "InsertCharPre *" }, _G.packer_plugins)]]
+vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'lsp_signature.nvim', 'nvim-compe', 'vim-vsnip'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
 vim.cmd [[au CursorMoved * ++once lua require("packer.load")({'clever-f.vim'}, { event = "CursorMoved *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
