@@ -25,13 +25,7 @@ lvim.builtin.treesitter.ensure_installed = {}
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
--- Themes settings
-vim.g.tokyonight_style = "night"
-vim.g.tokyonight_hide_inactive_statusline = true
-vim.g.tokyonight_italic_functions = true
-vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
-vim.g.tokyonight_dark_sidebar = false
-vim.g.tokyonight_transparent = false
+-- Galaxyline settings
 lvim.builtin.galaxyline.colors = {
   alt_bg = "#1f2335",
   grey = "#a9b1d6",
@@ -51,6 +45,7 @@ lvim.builtin.galaxyline.colors = {
 
 -- Builtin
 -- =========================================
+lvim.builtin.compe.documentation.border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
 lvim.builtin.treesitter.ensure_installed = "maintained"
 lvim.builtin.treesitter.matchup.enable = true
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -80,6 +75,7 @@ end
 lvim.lsp.diagnostics.virtual_text = true
 lvim.lsp.override = { "rust", "java" }
 require("user.json_schemas").setup()
+require("user.lsp").config()
 
 -- Additional Leader bindings for WhichKey
 -- =========================================
