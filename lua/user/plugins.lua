@@ -2,7 +2,15 @@ M = {}
 
 M.config = function()
   lvim.plugins = {
-    { "folke/tokyonight.nvim" },
+    {
+      "folke/tokyonight.nvim",
+      config = function()
+        require("user/theme").tokyonight()
+        vim.cmd [[
+      colorscheme tokyonight
+      ]]
+      end,
+    },
     {
       "ray-x/lsp_signature.nvim",
       config = function()
@@ -101,12 +109,10 @@ M.config = function()
       "kkoomen/vim-doge",
       event = "BufRead",
       run = "cd scripts && bash install.sh",
-      config = function ()
-        vim.cmd[[
-          let g:doge_doc_standard_python = 'google'
-          let g:doge_enable_mappings = 0
-        ]]
-      end
+      config = function()
+        vim.cmd "let g:doge_doc_standard_python='google'"
+        vim.cmd "let g:doge_enable_mappings=0"
+      end,
     },
   }
 end
