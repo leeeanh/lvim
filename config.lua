@@ -1,7 +1,7 @@
 -- General
 -- =========================================
 lvim.format_on_save = false
-lvim.leader = "space"
+lvim.leader = " "
 lvim.colorscheme = "tokyonight"
 
 -- Default options
@@ -25,24 +25,6 @@ lvim.builtin.treesitter.ensure_installed = {}
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
--- Galaxyline settings
-lvim.builtin.galaxyline.colors = {
-  alt_bg = "#1f2335",
-  grey = "#a9b1d6",
-  blue = "#394b70",
-  cyan = "#88c0d0",
-  red = "#BF616A",
-  green = "#A3BE8C",
-  yellow = "#E7cb93",
-  orange = "#c68a75",
-  purple = "#B48EAD",
-  magenta = "#D16D9E",
-  error_red = "#F44747",
-  warning_orange = "#ff8800",
-  info_yellow = "#FFCC66",
-  hint_blue = "#4FC1FF",
-}
-
 -- Builtin
 -- =========================================
 lvim.builtin.compe.documentation.border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
@@ -55,7 +37,6 @@ lvim.builtin.treesitter.indent = { enable = false }
 -- lvim.builtin.compe.source.orgmode = true
 lvim.builtin.dashboard.active = true
 lvim.builtin.dap.active = false
-lvim.builtin.galaxyline.active = true
 lvim.builtin.telescope.defaults.path_display = { shorten = 10 }
 lvim.builtin.terminal.active = true
 lvim.builtin.terminal.execs = {
