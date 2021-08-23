@@ -75,7 +75,7 @@ end
 lvim.lsp.diagnostics.virtual_text = true
 lvim.lsp.override = { "rust", "java" }
 require("user.json_schemas").setup()
-require("user.lsp").config()
+-- require("user.lsp").config()
 
 -- Additional Leader bindings for WhichKey
 -- =========================================
