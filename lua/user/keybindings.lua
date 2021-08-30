@@ -8,6 +8,10 @@ M.config = function()
   vim.api.nvim_set_keymap("n", ",,", ":CommentToggle<CR>", { noremap = true, silent = true })
   vim.api.nvim_set_keymap("v", ",,", ":CommentToggle<CR>", { noremap = true, silent = true })
 
+  -- Better n movement
+  lvim.keys.normal_mode["n"] = { "'Nn'[v:searchforward]", { expr = true, noremap = true } }
+  lvim.keys.normal_mode["N"] = { "'nN'[v:searchforward]", { expr = true, noremap = true } }
+
   lvim.builtin.which_key.mappings["t"] = {
     name = "+Trouble",
     r = { "<cmd>Trouble lsp_references<cr>", "References" },
@@ -19,12 +23,17 @@ M.config = function()
   }
 
   lvim.builtin.which_key.mappings["lo"] = { "<cmd>SymbolsOutline<cr>", "Symbol Outline" }
-  lvim.builtin.which_key.mappings["sm"] = { "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>", "Media Files" }
   lvim.builtin.which_key.mappings["sn"] = { "<cmd>TodoTelescope<cr>", "Todo" }
 
   lvim.builtin.which_key.mappings["lD"] = { "<cmd>DogeGenerate<cr>", "Documentations Generate" }
-  lvim.builtin.which_key.mappings["bd"] = { "<cmd>BufferDelete<cr>", "Buffer Delete" }
 
+  lvim.builtin.which_key.mappings["r"] = {
+    name = "+Magma Run",
+    r = {"<cmd>MagmaEvaluateLine<cr>", "Evaluate the current line"},
+    i = {"<cmd>MagmaInit<cr>", "Init the Jupiter Session"},
+    c = {"<cmd>MagmaReevaluateCell<cr>", "Reevaluate the currently selected cell"}
+  }
+  lvim.builtin.which_key.vmappings["r"] = {":<C-u>MagmaEvaluateVisual<cr>", "Evaluate the selected text"}
   -- lvim.builtin.which_key.mappings["gd"] = { "<cmd>DiffviewOpen HEAD~1<cr>", "Diff" }
   -- lvim.builtin.which_key.mappings["dU"] = { "<cmd>lua require('dapui').toggle()<cr>", "Toggle UI" }
   -- lvim.builtin.which_key.mappings["de"] = { "<cmd>lua require('dapui').eval()<cr>", "Eval" }
