@@ -35,26 +35,9 @@ M.config = function()
       cmd = "Trouble",
     },
     {
-      "nvim-telescope/telescope-media-files.nvim",
-      event = "BufWinEnter",
-      setup = function()
-        vim.cmd [[packadd telescope.nvim]]
-      end,
-    },
-    {
       "Pocco81/AutoSave.nvim",
       config = function()
         require("user.autosave").config()
-      end,
-    },
-    {
-      "nacro90/numb.nvim",
-      event = "BufRead",
-      config = function()
-        require("numb").setup {
-          show_numbers = true, -- Enable 'number' for the window while peeking
-          show_cursorline = true, -- Enable 'cursorline' for the window while peeking
-        }
       end,
     },
     {
@@ -73,25 +56,10 @@ M.config = function()
         require("user.hop").config()
       end,
     },
-    -- {
-    --   "norcalli/nvim-colorizer.lua",
-    --   event = "BufRead",
-    --   config = function()
-    --     require("colorizer").setup({ "*" }, {
-    --       RGB = true, -- #RGB hex codes
-    --       RRGGBB = true, -- #RRGGBB hex codes
-    --       RRGGBBAA = true, -- #RRGGBBAA hex codes
-    --       rgb_fn = true, -- CSS rgb() and rgba() functions
-    --       hsl_fn = true, -- CSS hsl() and hsla() functions
-    --       css = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
-    --       css_fn = true, -- Enable all CSS *functions*: rgb_fn, hsl_fn
-    --     })
-    --   end,
-    -- },
     {
       "simrat39/symbols-outline.nvim",
       cmd = "SymbolsOutline",
-      -- event = "BufRead",
+      event = "BufRead",
     },
     {
       "lukas-reineke/indent-blankline.nvim",
@@ -110,8 +78,19 @@ M.config = function()
       event = "BufRead",
       run = "cd scripts && bash install.sh",
       config = function()
-        vim.cmd "let g:doge_doc_standard_python='google'"
-        vim.cmd "let g:doge_enable_mappings=0"
+        vim.g.doge_doc_standard_python = "google"
+        vim.g.doge_enable_mappings = 0
+      end,
+    },
+    {
+      "dccsillag/magma-nvim",
+      event = "BufRead",
+      run = ":UpdateRemotePlugins",
+    },
+    {
+      "kevinhwang91/rnvimr",
+      config = function()
+        require "user.rnvimr"
       end,
     },
   }
