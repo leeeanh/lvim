@@ -4,12 +4,6 @@ M.config = function()
   lvim.plugins = {
     {
       "folke/tokyonight.nvim",
-      config = function()
-        require("user/theme").tokyonight()
-        vim.cmd [[
-      colorscheme tokyonight
-      ]]
-      end,
     },
     {
       "ray-x/lsp_signature.nvim",
@@ -73,19 +67,29 @@ M.config = function()
       run = "cd app && npm install",
       ft = "markdown",
     },
-    {
-      "kkoomen/vim-doge",
-      event = "BufRead",
-      run = "cd scripts && bash install.sh",
-      config = function()
-        vim.g.doge_doc_standard_python = "google"
-        vim.g.doge_enable_mappings = 0
-      end,
-    },
+    -- {
+    --   "kkoomen/vim-doge",
+    --   event = "BufRead",
+    --   run = "cd scripts && bash install.sh",
+    --   config = function()
+    --     vim.g.doge_doc_standard_python = "google"
+    --     vim.g.doge_enable_mappings = 0
+    --   end,
+    -- },
     {
       "dccsillag/magma-nvim",
       event = "BufRead",
       run = ":UpdateRemotePlugins",
+    },
+    {
+      "danymat/neogen",
+      config = function()
+        require("neogen").setup {
+          enabled = true,
+        }
+      end,
+      event = "BufRead",
+      requires = "nvim-treesitter/nvim-treesitter",
     },
     {
       "kevinhwang91/rnvimr",
