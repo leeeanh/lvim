@@ -6,9 +6,6 @@ M.config = function()
       "folke/tokyonight.nvim",
       config = function()
         require("user/theme").tokyonight()
-        vim.cmd [[
-      colorscheme tokyonight
-      ]]
       end,
     },
     {
@@ -91,6 +88,19 @@ M.config = function()
       "kevinhwang91/rnvimr",
       config = function()
         require "user.rnvimr"
+      end,
+    },
+    {
+      "tzachar/cmp-tabnine",
+      run = "./install.sh",
+      requires = "hrsh7th/nvim-cmp",
+      config = function()
+        local tabnine = require "cmp_tabnine.config"
+        tabnine:setup {
+          max_lines = 1000,
+          max_num_results = 10,
+          sort = true,
+        }
       end,
     },
   }

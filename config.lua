@@ -19,29 +19,18 @@ lvim.builtin.dashboard.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 0
-
--- if you don't want all the parsers change this to a table of the ones you want
-lvim.builtin.treesitter.ensure_installed = {}
-lvim.builtin.treesitter.ignore_install = { "haskell" }
-lvim.builtin.treesitter.highlight.enabled = true
+lvim.builtin.bufferline.active = false
 
 -- Builtin
 -- =========================================
-lvim.builtin.compe.documentation.border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
-lvim.builtin.treesitter.ensure_installed = "maintained"
-lvim.builtin.treesitter.matchup.enable = true
-lvim.builtin.treesitter.ignore_install = { "haskell" }
-lvim.builtin.treesitter.context_commentstring.enable = true
-lvim.builtin.treesitter.indent = { enable = false }
--- lvim.builtin.compe.source.tabnine = { kind = " ", priority = 200, max_reslts = 6 }
--- lvim.builtin.compe.source.orgmode = true
-lvim.builtin.dashboard.active = true
-lvim.builtin.dap.active = false
-lvim.builtin.telescope.defaults.path_display = { shorten = 10 }
-lvim.builtin.terminal.active = true
-lvim.builtin.terminal.execs = {
-  { "lazygit", "gg", "LazyGit" },
-}
+require("user.builtin").config()
+
+-- Lualine settings
+-- =========================================
+require("user.lualine").config()
+
+-- Theme settings
+require("user.theme").tokyonight()
 
 -- Additional Plugins
 -- =========================================
@@ -49,14 +38,7 @@ require("user.plugins").config()
 
 -- Language Specific
 -- =========================================
-lvim.lang.markdown = {}
-lvim.builtin.lspinstall.on_config_done = function()
-  require("user.tailwind").setup()
-end
-lvim.lsp.diagnostics.virtual_text = true
-lvim.lsp.override = { "rust", "java" }
-require("user.json_schemas").setup()
--- require("user.lsp").config()
+require("user.null_ls").config()
 
 -- Additional Leader bindings for WhichKey
 -- =========================================

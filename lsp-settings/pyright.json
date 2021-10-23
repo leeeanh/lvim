@@ -1,5 +1,5 @@
 {
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.useLibraryCodeForTypes": true,
-  "python.analysis.stubPath": "/home/leeanh/Documents/typings"
+  "python.analysis.stubPath": "/home/ducanh/typings/"
 }
