@@ -25,15 +25,19 @@ M.config = function()
   lvim.builtin.which_key.mappings["lo"] = { "<cmd>SymbolsOutline<cr>", "Symbol Outline" }
   lvim.builtin.which_key.mappings["sn"] = { "<cmd>TodoTelescope<cr>", "Todo" }
 
-  lvim.builtin.which_key.mappings["lD"] = { "<cmd>DogeGenerate<cr>", "Documentations Generate" }
+  lvim.builtin.which_key.mappings["lD"] = { "<cmd>lua require('neogen').generate()<cr>", "Documentations Function" }
+  lvim.builtin.which_key.mappings["lc"] = {
+    "<cmd>lua require('neogen').generate({ type = 'class' })<cr>",
+    "Documentations Class",
+  }
 
   lvim.builtin.which_key.mappings["r"] = {
     name = "+Magma Run",
-    r = {"<cmd>MagmaEvaluateLine<cr>", "Evaluate the current line"},
-    i = {"<cmd>MagmaInit<cr>", "Init the Jupiter Session"},
-    c = {"<cmd>MagmaReevaluateCell<cr>", "Reevaluate the currently selected cell"}
+    r = { "<cmd>MagmaEvaluateLine<cr>", "Evaluate the current line" },
+    i = { "<cmd>MagmaInit<cr>", "Init the Jupiter Session" },
+    c = { "<cmd>MagmaReevaluateCell<cr>", "Reevaluate the currently selected cell" },
   }
-  lvim.builtin.which_key.vmappings["r"] = {":<C-u>MagmaEvaluateVisual<cr>", "Evaluate the selected text"}
+  lvim.builtin.which_key.vmappings["r"] = { ":<C-u>MagmaEvaluateVisual<cr>", "Evaluate the selected text" }
   -- lvim.builtin.which_key.mappings["gd"] = { "<cmd>DiffviewOpen HEAD~1<cr>", "Diff" }
   -- lvim.builtin.which_key.mappings["dU"] = { "<cmd>lua require('dapui').toggle()<cr>", "Toggle UI" }
   -- lvim.builtin.which_key.mappings["de"] = { "<cmd>lua require('dapui').eval()<cr>", "Eval" }

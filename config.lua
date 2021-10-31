@@ -27,12 +27,13 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Builtin
 -- =========================================
-lvim.builtin.compe.documentation.border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
+lvim.builtin.cmp.documentation.border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
 lvim.builtin.treesitter.ensure_installed = "maintained"
 lvim.builtin.treesitter.matchup.enable = true
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.context_commentstring.enable = true
 lvim.builtin.treesitter.indent = { enable = false }
+-- lvim.builtin.lualine.sections.lualine_b = { "branch" }
 -- lvim.builtin.compe.source.tabnine = { kind = " ", priority = 200, max_reslts = 6 }
 -- lvim.builtin.compe.source.orgmode = true
 lvim.builtin.dashboard.active = true
@@ -43,20 +44,27 @@ lvim.builtin.terminal.execs = {
   { "lazygit", "gg", "LazyGit" },
 }
 
+-- Themes Config
+-- =========================================
+require("user.lualine").config()
+
 -- Additional Plugins
 -- =========================================
 require("user.plugins").config()
+require("user.theme").tokyonight()
 
 -- Language Specific
 -- =========================================
-lvim.lang.markdown = {}
-lvim.builtin.lspinstall.on_config_done = function()
-  require("user.tailwind").setup()
-end
-lvim.lsp.diagnostics.virtual_text = true
-lvim.lsp.override = { "rust", "java" }
-require("user.json_schemas").setup()
-require("user.lsp").config()
+-- lvim.lang.markdown = {}
+-- lvim.builtin.lspinstall.on_config_done = function()
+--   lvim.lang.tailwindcss.lsp.setup.filetypes = { "markdown" }
+--   lvim.lang.tailwindcss.lsp.active = true
+--   require("lsp").setup "tailwindcss"
+-- end
+-- lvim.lsp.diagnostics.virtual_text = true
+-- lvim.lsp.override = { "rust", "java" }
+-- require("user.json_schemas").setup()
+-- require("user.lsp").config()
 
 -- Additional Leader bindings for WhichKey
 -- =========================================
